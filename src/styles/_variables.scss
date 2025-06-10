@@ -1,0 +1,28 @@
+// Color Variables
+$primary-blue: #2563EB;
+$dark-blue: #1E40AF;
+$light-blue: #60A5FA;
+$pale-blue: #BFDBFE;
+$white: #FFFFFF;
+$light-gray: #F3F4F6;
+$dark-gray: #6B7280;
+$success-green: #10B981;
+$error-red: #EF4444;
+
+// Responsive Breakpoints
+$breakpoints: (
+  'xs': 576px,
+  'sm': 768px,
+  'md': 992px,
+  'lg': 1200px,
+  'xl': 1400px
+);
+
+// Media Queries Mixins
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+} 

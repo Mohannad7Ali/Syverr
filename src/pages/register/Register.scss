@@ -1,0 +1,355 @@
+@import '../../styles/variables';
+
+.register {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, $light-blue 0%, $primary-blue 100%);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="%23ffffff" opacity="0.1"/></svg>');
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  .register-card {
+    width: 100%;
+    max-width: 500px;
+    background: rgba($white, 0.95);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      transform: translate(-50%, -52%);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1rem;
+        background: $primary-blue;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-size: 2rem;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba($primary-blue, 0.3);
+      }
+
+      h1 {
+        color: $dark-blue;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -8px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 50px;
+          height: 3px;
+          background: $primary-blue;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    form {
+      .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          color: $dark-gray;
+          font-weight: 500;
+        }
+
+        input {
+          width: 100%;
+          padding: 12px 16px;
+          border: 2px solid $light-gray;
+          border-radius: 8px;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+          background: $white;
+
+          &:focus {
+            border-color: $primary-blue;
+            box-shadow: 0 0 0 3px rgba($primary-blue, 0.1);
+            outline: none;
+          }
+
+          &::placeholder {
+            color: $dark-gray;
+            opacity: 0.7;
+          }
+        }
+      }
+
+      .password-requirements {
+        margin: 1rem 0;
+        padding: 1rem;
+        background: $light-gray;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: $dark-gray;
+
+        h4 {
+          margin-bottom: 0.5rem;
+          color: $dark-blue;
+          font-size: 1rem;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+
+            &::before {
+              content: '•';
+              margin-right: 0.5rem;
+              color: $primary-blue;
+            }
+
+            &.valid {
+              color: $success-green;
+
+              &::before {
+                content: '✓';
+                color: $success-green;
+              }
+            }
+          }
+        }
+      }
+
+      .terms {
+        margin: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        input[type="checkbox"] {
+          width: auto;
+          margin: 0;
+        }
+
+        label {
+          font-size: 0.9rem;
+          color: $dark-gray;
+
+          a {
+            color: $primary-blue;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, $primary-blue 0%, $dark-blue 100%);
+        color: $white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba($white, 0.2),
+            transparent
+          );
+          transition: 0.5s;
+        }
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba($primary-blue, 0.3);
+
+          &::before {
+            left: 100%;
+          }
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .social-login {
+      margin-top: 2rem;
+      text-align: center;
+
+      .divider {
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+        color: $dark-gray;
+
+        &::before,
+        &::after {
+          content: '';
+          flex: 1;
+          height: 1px;
+          background: $light-gray;
+        }
+
+        span {
+          padding: 0 1rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      .social-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+        button {
+          flex: 1;
+          padding: 10px;
+          border: 2px solid $light-gray;
+          border-radius: 8px;
+          background: $white;
+          color: $dark-gray;
+          font-size: 0.9rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+
+          &:hover {
+            background: $light-gray;
+            border-color: $dark-gray;
+          }
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: $dark-gray;
+      font-size: 0.9rem;
+
+      a {
+        color: $primary-blue;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $dark-blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .register {
+    padding: 1rem;
+
+    .register-card {
+      padding: 1.5rem;
+      width: 90%;
+      max-width: 500px;
+
+      .header {
+        .logo {
+          width: 60px;
+          height: 60px;
+          font-size: 1.5rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+
+      form {
+        .form-group {
+          margin-bottom: 1rem;
+
+          input {
+            padding: 10px 14px;
+          }
+        }
+
+        .password-requirements {
+          padding: 0.75rem;
+          font-size: 0.8rem;
+        }
+      }
+
+      .social-login {
+        .social-buttons {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

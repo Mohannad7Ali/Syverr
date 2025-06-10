@@ -1,0 +1,60 @@
+.add {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    h1 {
+      width: max-content;
+      margin-bottom: 30px;
+      color: #1E40AF;
+      font-weight: 700;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      label {
+        color: #1E40AF;
+        font-size: 18px;
+      }
+      input , select , textarea{
+        border:1px solid #a0b3d8 ;
+        &:focus{
+          transition: 0.2s;
+          outline: none; /* Removes default outline */
+          box-shadow: 0 8px 10px rgba(11, 1, 39, 0.2); 
+
+        }
+      }
+      .info,
+      .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+
+        input,
+        select,
+        textarea {
+          padding: 20px;
+        }
+
+        button {
+          border: none;
+          padding: 20px;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #2563EB;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

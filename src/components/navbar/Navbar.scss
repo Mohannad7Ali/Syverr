@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #013914;
+  background-color: #1E40AF;
   color: white;
   position: sticky;
   top: 0;
@@ -10,13 +10,13 @@
   transition: 0.5s all ease;
 
   &.active {
-    background-color: white;
+    background-color: #BFDBFE;
     color: black;
 
     button {
       background-color: white !important;
-      color: #1dbf73 !important;
-      border: 1px solid #1dbf73 !important;
+      color: #60A5FA !important;
+      border: 1px solid #60A5FA !important;
     }
   }
 
@@ -36,7 +36,7 @@
 
       .dot {
         font-weight: bold;
-        color: #1dbf73;
+        color: #4285F4;
       }
     }
     .links {
@@ -69,16 +69,16 @@
           top: 50px;
           right: 0;
           padding: 20px;
-          background-color: white;
+          background-color: #0e69fb;
           border-radius: 10px;
           z-index: 999;
-          border: 1px solid lightgrey;
+          border: 1px solid  #6B7280;
           display: flex;
           flex-direction: column;
           gap: 10px;
           width: 200px;
-          font-weight: 300;
-          color: gray;
+          font-weight: 600;
+          color: #BFDBFE;
         }
       }
 
@@ -91,8 +91,8 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #1dbf73;
-          border-color: #1dbf73;
+          background-color: #60A5FA;
+          border-color: #60A5FA;
         }
       }
     }
@@ -110,8 +110,9 @@
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    color: gray;
-    font-weight: 300;
+    color: BFDBFE;
+    font-weight: 500;
     font-family: "Montserrat", sans-serif;
+    transition-duration: 2s;
   }
 }

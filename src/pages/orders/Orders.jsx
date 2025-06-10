@@ -33,7 +33,7 @@ const Orders = () => {
             </td>
             <td>Stunning concept art</td>
             <td>59.<sup>99</sup></td>
-            <td>Maria Anders</td>
+            <td>Mohannad ALi</td>
             <td>
               <img className="message" src="./img/message.png" alt="" />
             </td>
@@ -63,7 +63,7 @@ const Orders = () => {
             </td>
             <td>High quality digital character</td>
             <td>110.<sup>99</sup></td>
-            <td>Roland Mendel</td>
+            <td>Maya Kaydaban</td>
             <td>
               <img className="message" src="./img/message.png" alt="" />
             </td>
@@ -78,7 +78,7 @@ const Orders = () => {
             </td>
             <td>Illustration hyper realistic painting</td>
             <td>39.<sup>99</sup></td>
-            <td>Helen Bennett</td>
+            <td>Sara Baddour</td>
             <td>
               <img className="message" src="./img/message.png" alt="" />
             </td>
@@ -93,7 +93,7 @@ const Orders = () => {
             </td>
             <td>Original ai generated digital art</td>
             <td>119.<sup>99</sup></td>
-            <td>Yoshi Tannamuri</td>
+            <td>Adel Hindy</td>
             <td>
               <img className="message" src="./img/message.png" alt="" />
             </td>
@@ -108,7 +108,7 @@ const Orders = () => {
             </td>
             <td>Text based ai generated art</td>
             <td>49.<sup>99</sup></td>
-            <td>Giovanni Rovelli</td>
+            <td>Ali Shahhoud</td>
             <td>
               <img className="message" src="./img/message.png" alt="" />
             </td>

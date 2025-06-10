@@ -2,7 +2,7 @@
   height: 600px;
   display: flex;
   justify-content: center;
-  background-color: #013914;
+  background-color: #1E40AF;
   color: white;
 
   .container {
@@ -17,7 +17,7 @@
 
       h1 {
         font-size: 50px;
-
+        color: white;
         span {
           font-style: italic;
           font-weight: 300;
@@ -31,7 +31,12 @@
         align-items: center;
         justify-content: space-between;
         overflow: hidden;
+        &:hover{
+          transition: 0.2s;
+          outline: none; /* Removes default outline */
+          box-shadow: 0 15px 20px rgba(168, 137, 253, 0.2); 
 
+        }
         .searchInput {
           display: flex;
           align-items: center;
@@ -43,8 +48,10 @@
           }
 
           input {
+            width: 100%;
             border: none;
             outline: none;
+            
 
             &::placeholder {
               color: gray;

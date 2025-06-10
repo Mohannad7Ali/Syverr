@@ -12,7 +12,7 @@
       justify-content: space-between;
 
       button {
-        background-color: #1dbf73;
+        background-color: #2563EB;
         color: white;
         font-weight: 500;
         border: none;
@@ -36,9 +36,10 @@
           }
           
           .image {
-            width: 50px;
-            height: 25px;
+            width: 70px;
+            height: 40px;
             object-fit: cover;
+            // border-radius: 100% ;
           }
 
           .delete {
@@ -48,7 +49,7 @@
 
         }
         &:nth-child(even) {
-          background-color: #1dbf730f;
+          background-color: #1717870f;
         }
       }
     }

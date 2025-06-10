@@ -6,6 +6,7 @@
   .container {
     width: 1400px;
     position: relative;
+    border-radius: 2px;
   }
 
   .carousel-initialized {
@@ -16,7 +17,7 @@
   .carousel-next {
     width: 50px;
     height: 50px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(187, 197, 219);
     border-radius: 50%;
     position: absolute;
     top: 0;

@@ -7,7 +7,7 @@ function Gig() {
     <div className="gig">
       <div className="container">
         <div className="left">
-          <span className="breadcrumbs">Liverr > Graphics & Design ></span>
+          <span className="breadcrumbs">Liverr / Graphics & Design /</span>
           <h1>I will create ai generated art for you</h1>
           <div className="user">
             <img
@@ -15,7 +15,7 @@ function Gig() {
               src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
             />
-            <span>Anna Bell</span>
+            <span>Maya Kaydaban</span>
             <div className="stars">
               <img src="/img/star.png" alt="" />
               <img src="/img/star.png" alt="" />
@@ -63,7 +63,7 @@ function Gig() {
                 alt=""
               />
               <div className="info">
-                <span>Anna Bell</span>
+                <span>Maya Kaydaban</span>
                 <div className="stars">
                   <img src="/img/star.png" alt="" />
                   <img src="/img/star.png" alt="" />
@@ -117,7 +117,7 @@ function Gig() {
                   alt=""
                 />
                 <div className="info">
-                  <span>Garner David</span>
+                  <span>Mohannad Ali</span>
                   <div className="country">
                     <img
                       src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"
@@ -160,7 +160,7 @@ function Gig() {
                   alt=""
                 />
                 <div className="info">
-                  <span>Sidney Owen</span>
+                  <span>Sara Baddour</span>
                   <div className="country">
                     <img
                       src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e9-1f1ea.png"
@@ -201,7 +201,7 @@ function Gig() {
                   alt=""
                 />
                 <div className="info">
-                  <span>Lyle Giles </span>
+                  <span>Adel Hindy </span>
                   <div className="country">
                     <img
                       src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"

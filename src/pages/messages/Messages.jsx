@@ -5,7 +5,7 @@ import "./Messages.scss";
 const Messages = () => {
   const currentUser = {
     id: 1,
-    username: "Anna",
+    username: "Mohannad",
     isSeller: true,
   };
 
@@ -28,7 +28,7 @@ const Messages = () => {
             <th>Action</th>
           </tr>
           <tr className="active">
-            <td>Charley Sharp</td>
+            <td>Mohannad Ali</td>
             <td>
               <Link to="/message/123" className="link">
                 {message.substring(0, 100)}...
@@ -40,7 +40,7 @@ const Messages = () => {
             </td>
           </tr>
           <tr className="active">
-            <td>John Doe</td>
+            <td>Maya kayadaban</td>
 
             <td>
               <Link to="/message/123" className="link">
@@ -53,7 +53,7 @@ const Messages = () => {
             </td>
           </tr>
           <tr>
-            <td>Elinor Good</td>
+            <td>Sara Baddour</td>
             <td>
               <Link to="/message/123" className="link">
                 {message.substring(0, 100)}...
@@ -62,7 +62,7 @@ const Messages = () => {
             <td>1 day ago</td>
           </tr>
           <tr>
-            <td>Garner David </td>
+            <td>Adel Hindy </td>
             <td>
               <Link to="/message/123" className="link">
                 {message.substring(0, 100)}...
@@ -71,7 +71,7 @@ const Messages = () => {
             <td>2 days ago</td>
           </tr>
           <tr>
-            <td>Troy Oliver</td>
+            <td>Ali Shahhoud</td>
             <td>{message.substring(0, 100)}</td>
             <td>1 week ago</td>
           </tr>

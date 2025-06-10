@@ -13,8 +13,10 @@ import Orders from "./pages/orders/Orders";
 import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
-let count = 0 ;
+
 function App() {
+
+  // we make here layout constant for all pages 
   const Layout = () => {
     return (
       <div className="app">
@@ -28,7 +30,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: <Layout />, //this layout will apply for all path object below
       children: [
         {
           path: "/",
